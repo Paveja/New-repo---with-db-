@@ -24,7 +24,7 @@ revolte:
             variables:
               BASE_URL: "/api/v1"
               DATABASE_URL: "#{userDatabase.dbUrl}"
-              DATABASE_PORT: "#{userDatabase.dbPort}"
+              DATABASE_PORT: "#{userDatabase.dbPort}"  
               DATABASE_USERNAME: "#{userDatabase.dbUsername}"
               DATABASE_PASSWORD: "#{userDatabase.dbPassword}"
               DATABASE_NAME: "#{userDatabase.dbName}"
@@ -33,7 +33,7 @@ revolte:
           name: "userDatabase"
           type: "DATABASE"
           specifications:
-            cpu: 2
+            cpu: 2   
             memory: 1
             storage: 50
             engine: "postgres"
