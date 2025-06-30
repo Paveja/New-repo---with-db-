@@ -1,6 +1,6 @@
 revolte:
   version: "1.0"
-  project: testProj
+  project: optum
   appName: message-service
   env:
     qa:     
