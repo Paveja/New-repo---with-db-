@@ -41,6 +41,6 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket1_service
           configurations:
-              bucketName: revolte-ramco-code-red2
+              bucketName: revolte-codestyle-rules
               versioningStatus: enabled
               public: false
