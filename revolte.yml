@@ -52,3 +52,13 @@ revolte:
             bucketName: revolte-codestyle-rules
             versioningStatus: enabled
             public: false
+            corsRules: 
+               -  id: "Rule1"
+                  methods:
+                    - GET
+                    - POST
+                  origins:
+                    - "*"
+                  allowedHeaders:
+                    - "Content-Type"
+                  maxAgeSeconds: 600
