@@ -51,4 +51,4 @@ revolte:
           configurations:
             bucketName: revolte-ramco-green2
             versioningStatus: enabled
-            public: false
+            public: true
