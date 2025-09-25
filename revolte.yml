@@ -49,6 +49,6 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket1_service
           configurations:
-            bucketName: revolte-ramco-green2
+            bucketName: revolte-ramco-green3
             versioningStatus: enabled
             public: true
