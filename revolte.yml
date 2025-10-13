@@ -45,10 +45,3 @@ revolte:
             memory: 4
             storage: 50
             engine: "postgres"
-        rid_3:
-          type: STORAGE_BUCKET
-          name: storage_bucket1_service
-          configurations:
-            bucketName: revolte-ramco-green3
-            versioningStatus: enabled
-            public: true
