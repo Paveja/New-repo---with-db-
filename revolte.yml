@@ -10,12 +10,13 @@ revolte:
           type: WEB_SERVICE
           name: userService
           entryPoint: Program.cs
+          route:
+              path: /user-vault
+              stripBasePath: false
           properties:
             health: /user-vault/health
             port: 8080
-            route:
-              path: /user-vault
-              stripBasePath: false
+    
             variables:
               BASE_URL: /api/v1
               DATABASE_URL: "#{userDatabase.dbUrl}"
