@@ -67,7 +67,7 @@ app.UsePathBase(baseUrl);
 app.UseRouting();
 
 // Map controllers
-app.MapHealthChecks("/health", new HealthCheckOptions
+app.MapHealthChecks("/user-vault/health", new HealthCheckOptions
 {
    ResponseWriter = async (context, report) =>
    {
