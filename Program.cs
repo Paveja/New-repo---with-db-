@@ -67,15 +67,16 @@ app.UsePathBase(baseUrl);
 app.UseRouting();
 
 // Map controllers
-app.MapHealthChecks("/user-vault/health", new HealthCheckOptions
+app.MapHealthChecks("/health", new HealthCheckOptions
 {
    ResponseWriter = async (context, report) =>
    {
        context.Response.ContentType = "application/json";
        var response = new
        {
+           project2 = true,
+           app1 = true,
            success = true,   
-           status = report.Status.ToString()
        };
        await context.Response.WriteAsJsonAsync(response);
    }
