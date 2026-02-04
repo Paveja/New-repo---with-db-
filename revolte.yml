@@ -3,7 +3,7 @@ revolte:
   project: light
   appName: be-service
   env:
-    qa:
+    staging:
       branch: qa
       services:
         rid_1:
