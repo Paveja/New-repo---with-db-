@@ -1,7 +1,7 @@
 revolte:
   version: "1.0"
   project: light
-  appName: be-service
+  appName: message-service
   env:
     staging:
       branch: qa
