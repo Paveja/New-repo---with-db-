@@ -44,7 +44,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
     staging:
       codeReview: true
       testSuite: true
@@ -76,7 +76,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
     production:
       codeReview: true
       testSuite: true
@@ -120,7 +120,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
     preview:
       codeReview: true
       testSuite: true
@@ -151,4 +151,4 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
