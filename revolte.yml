@@ -1,14 +1,7 @@
 revolte:
   version: '1.0'
-  project: New Project
-  appName: Test app
-  config:
-    codeReview:
-      summarize: true
-      suggestFixes: true
-      commentStyle: Balanced
-    testSuite:
-      command: npm run test
+  project: San proj
+  appName: BE app
   workflow:
     developerWorkflow:
       enabled: true
