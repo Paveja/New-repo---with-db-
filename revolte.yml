@@ -1,14 +1,12 @@
 revolte:
   version: '1.0'
-  project: San proj
-  appName: BE app
+  project: Prod Test
+  appName: New DB test
   workflow:
     developerWorkflow:
       enabled: true
   env:
-    qa:
-      codeReview: true
-      testSuite: true
+    staging:
       branch: main
       services:
         rid_1:
@@ -38,9 +36,7 @@ revolte:
             memory: 1
             storage: 30
             engine: mysql
-    staging:
-      codeReview: true
-      testSuite: true
+    qa:
       branch: main
       services:
         rid_1:
@@ -71,8 +67,6 @@ revolte:
             storage: 30
             engine: mysql
     production:
-      codeReview: true
-      testSuite: true
       branch: main
       services:
         rid_1:
@@ -115,8 +109,6 @@ revolte:
             storage: 30
             engine: mysql
     preview:
-      codeReview: true
-      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
