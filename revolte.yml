@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Prod Test
-  appName: New DB test
+  project: test proj
+  appName: new app
   workflow:
     developerWorkflow:
       enabled: true
