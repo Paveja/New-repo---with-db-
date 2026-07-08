@@ -40,7 +40,7 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket_service
           configurations:
-            bucketName: test-stag-bucket
+            bucketName: test-stag-bucket-new
             versioningStatus: enabled
             public: false
     qa:
@@ -77,7 +77,7 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket_service
           configurations:
-            bucketName: test-qa-bucket
+            bucketName: test-qa-bucket-new
             versioningStatus: enabled
             public: false
     production:
@@ -126,7 +126,7 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket_service
           configurations:
-            bucketName: test-prod-bucket
+            bucketName: test-prod-bucket-new
             versioningStatus: enabled
             public: false
     preview:
@@ -162,6 +162,6 @@ revolte:
           type: STORAGE_BUCKET
           name: storage_bucket_service
           configurations:
-            bucketName: test-preview-bucket
+            bucketName: test-preview-bucket-new
             versioningStatus: enabled
             public: false
