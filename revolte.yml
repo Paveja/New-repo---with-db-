@@ -7,7 +7,7 @@ revolte:
       enabled: true
   env:
     staging:
-      branch: main
+      branch: Test_branch
       services:
         rid_1:
           type: WEB_SERVICE
@@ -44,7 +44,7 @@ revolte:
             versioningStatus: enabled
             public: false
     qa:
-      branch: main
+      branch: Test_branch
       services:
         rid_1:
           type: WEB_SERVICE
