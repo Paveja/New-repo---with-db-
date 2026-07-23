@@ -35,14 +35,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: mysql
-        rid_3:
-          type: STORAGE_BUCKET
-          name: storage_bucket_service
-          configurations:
-            bucketName: test-stag-bucket-new
-            versioningStatus: enabled
-            public: false
+            engine: postgres
     qa:
       branch: Test_branch
       services:
@@ -72,14 +65,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: mysql
-        rid_3:
-          type: STORAGE_BUCKET
-          name: storage_bucket_service
-          configurations:
-            bucketName: test-qa-bucket-new
-            versioningStatus: enabled
-            public: false
+            engine: postgres
     production:
       branch: main
       services:
@@ -121,14 +107,7 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: mysql
-        rid_3:
-          type: STORAGE_BUCKET
-          name: storage_bucket_service
-          configurations:
-            bucketName: test-prod-bucket-new
-            versioningStatus: enabled
-            public: false
+            engine: postgres
     preview:
       services:
         rid_1:
@@ -157,11 +136,4 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: mysql
-        rid_3:
-          type: STORAGE_BUCKET
-          name: storage_bucket_service
-          configurations:
-            bucketName: test-preview-bucket-new
-            versioningStatus: enabled
-            public: false
+            engine: postgres
