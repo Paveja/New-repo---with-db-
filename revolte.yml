@@ -7,7 +7,7 @@ revolte:
       enabled: true
   env:
     staging:
-      branch: Test_branch
+      branch: main
       services:
         rid_1:
           type: WEB_SERVICE
@@ -35,9 +35,16 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
+        rid_3:
+          type: STORAGE_BUCKET
+          name: storage_bucket_service
+          configurations:
+            bucketName: test-stag-bucket-new
+            versioningStatus: enabled
+            public: false
     qa:
-      branch: Test_branch
+      branch: main
       services:
         rid_1:
           type: WEB_SERVICE
@@ -65,7 +72,14 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
+        rid_3:
+          type: STORAGE_BUCKET
+          name: storage_bucket_service
+          configurations:
+            bucketName: test-qa-bucket-new
+            versioningStatus: enabled
+            public: false
     production:
       branch: main
       services:
@@ -107,7 +121,14 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
+        rid_3:
+          type: STORAGE_BUCKET
+          name: storage_bucket_service
+          configurations:
+            bucketName: test-prod-bucket-new
+            versioningStatus: enabled
+            public: false
     preview:
       services:
         rid_1:
@@ -136,4 +157,11 @@ revolte:
             cpu: 2
             memory: 1
             storage: 30
-            engine: postgres
+            engine: mysql
+        rid_3:
+          type: STORAGE_BUCKET
+          name: storage_bucket_service
+          configurations:
+            bucketName: test-preview-bucket-new
+            versioningStatus: enabled
+            public: false
